@@ -5,7 +5,6 @@ My personal [Kirby](https://getkirby.com/) starter kit
 ## Features
 
 - ⚡️ [Vite](https://vitejs.dev/)
-- 🐳 [DDEV](https://ddev.com/)
 - ♻️ [Very Simple Components](https://github.com/very-simple/components)
 - 🚀 [Very Simple Deploy](https://github.com/very-simple/deploy)
 - 🍬 [Kirby Template Sugar](https://github.com/arnoson/kirby-template-sugar)
@@ -15,19 +14,10 @@ My personal [Kirby](https://getkirby.com/) starter kit
 - 🦾 Typescript
 - 🎨 Modern CSS w/ nesting, layers, custom media queries
 - 🐛 Debugging
-- 📬 Local email testing
 - 🗄️ Backups
 - 🔑 dotenv
 
 ## Development
-
-Start DDEV and vite:
-
-```bash
-npm run start
-```
-
-If DDEV is already running:
 
 ```bash
 npm run dev

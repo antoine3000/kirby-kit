@@ -2,4 +2,6 @@
 
 <h1><?= $page->title() ?></h1>
 
-<snippet:image $image="<? $page->files()->first() ?>" />
+<?php if ($page->files()->isNotEmpty()) : ?>
+  <snippet:image $image="<? $page->files()->first() ?>" />
+<?php endif ?>

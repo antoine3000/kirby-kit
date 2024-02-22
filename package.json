@@ -1,7 +1,9 @@
 {
   "type": "module",
   "scripts": {
-    "dev": "rm -rf ./site/compiled && vite",
+    "dev": "concurrently \"npm:server\" \"npm:vite\" -c yellow,green",
+    "server": "php -S localhost:8888 -t public ./kirby/router.php",
+    "vite": "rm -rf ./site/compiled && vite",
     "build": "rm -rf ./site/compiled && vite build",
     "start": "ddev start && npm run dev",
     "deploy": "only-branch main && npm run build && NODE_ENV=production deploy",
@@ -12,6 +14,7 @@
   "devDependencies": {
     "@prettier/plugin-php": "^0.21.0",
     "@types/node": "^20.0.0",
+    "concurrently": "^8.2.2",
     "only-branch": "^0.0.2",
     "postcss-custom-media": "^10.0.2",
     "postcss-nesting": "^12.0.1",
