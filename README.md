@@ -1,6 +1,6 @@
 # Kirby Kit
 
-My personal [Kirby](https://getkirby.com/) starter kit
+Personal [Kirby](https://getkirby.com/) starter kit, based on [Arnoson](https://github.com/arnoson/kirby-kit)'s.
 
 ## Features
 
